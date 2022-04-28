@@ -15,7 +15,7 @@ Version 0.1.0 - December 2022
 See the [SESSIONINFO](SESSIONINFO.md) file for all versions of python packages used. This info is also saved in [paper_env](paper_env.yml). 
 
 ## License
-This project is licensed under the MIT License. See also the [LICENSE](LICENSE.md) file.
+This project is licensed under the MIT License. See also the [LICENSE](LICENSE) file.
 
 
 
