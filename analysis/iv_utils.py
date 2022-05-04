@@ -547,7 +547,7 @@ def plot_delta_map(da_delta, plot_regions=False, vlims=False, calcsum=False, cma
     else:
         da_delta_mean = da_delta.mean('time')
     
-    plt.figure(figsize=(12,5))
+    fig = plt.figure(figsize=(12,5))
     proj=ccrs.PlateCarree()
     ax = plt.subplot(111, projection=proj)
         
@@ -563,7 +563,7 @@ def plot_delta_map(da_delta, plot_regions=False, vlims=False, calcsum=False, cma
     ax.set_extent((-180,180,-63,90), crs=proj) 
 
     if plot_regions: regionmask.defined_regions.srex.plot(ax=ax,add_ocean=False, coastlines=False, add_label=False) #label='abbrev'
-    return ax
+    return fig, ax
 
 
 
